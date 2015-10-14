@@ -1,1 +1,10 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        'org.grails:grails-gradle-plugin:2.1.0'
+    }
+}
+
 apply plugin: 'idea'
