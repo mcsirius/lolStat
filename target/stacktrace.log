@@ -4321,3 +4321,1479 @@ Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
 	... 6 more
+2015-10-14 19:24:22,943 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:117)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	... 23 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	... 36 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:24:22,946 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:117)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	... 36 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:24:22,946 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	... 36 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:24:22,946 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:24:22,947 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:24:22,947 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,947 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,947 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,947 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,948 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,948 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:24:22,948 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,975 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,976 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,976 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,976 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,976 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:24:22,976 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,976 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,976 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,977 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:24:22,978 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:24:22,978 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,626 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:117)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	... 23 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	... 36 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:32:31,628 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:117)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	... 36 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:32:31,628 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	... 36 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:32:31,629 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 47 more
+2015-10-14 19:32:31,629 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlClassGetDeclaredFields(ReflectiveInterceptor.java:1593)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.init(ClassPropertyFetcher.java:171)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.<init>(ClassPropertyFetcher.java:91)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:82)
+	at org.codehaus.groovy.grails.commons.ClassPropertyFetcher.forClass(ClassPropertyFetcher.java:63)
+	at org.codehaus.groovy.grails.commons.AbstractGrailsClass.<init>(AbstractGrailsClass.java:84)
+	at org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass.<init>(AbstractInjectableGrailsClass.java:29)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass.<init>(DefaultGrailsControllerClass.java:92)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.codehaus.groovy.grails.commons.ArtefactHandlerAdapter.newArtefactClass(ArtefactHandlerAdapter.java:108)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:812)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.addArtefact(DefaultGrailsApplication.java:538)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.configureLoadedClasses(DefaultGrailsApplication.java:259)
+	at org.codehaus.groovy.grails.commons.DefaultGrailsApplication.initialise(DefaultGrailsApplication.java:743)
+	at org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean.afterPropertiesSet(GrailsPluginManagerFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:70)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:32:31,630 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,630 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,630 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,630 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,630 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,630 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:32:31,630 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,662 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,662 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,663 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,663 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,663 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:32:31,663 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,663 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,664 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,664 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,664 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,664 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:32:31,664 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,664 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,665 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,665 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.reflect.InvocationTargetException
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,665 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
+2015-10-14 19:32:31,665 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+2015-10-14 19:32:31,665 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsControllerClass
+	... 5 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Lorg/codehaus/groovy/grails/plugins/web/async/api/ControllersAsyncApi;
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2348)
+	at java.lang.Class.getDeclaredFields(Class.java:1779)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.codehaus.groovy.grails.plugins.web.async.api.ControllersAsyncApi
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	... 7 more
