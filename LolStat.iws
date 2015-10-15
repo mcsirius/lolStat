@@ -2,11 +2,343 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="857c56ab-34bc-4179-a8f3-9fe91f117f59" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib$_closure2_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib$_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib$_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib$_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryResourceTagLib.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryService$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryService$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryService$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryService$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryTagLib$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryTagLib$_closure1_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryTagLib$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryTagLib$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryTagLib$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryTagLib$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/JQueryTagLib.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/BlockingCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheBeanPostProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheConfigArtefactHandler$CacheConfigGrailsClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheConfigArtefactHandler$DefaultCacheConfigGrailsClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheConfigArtefactHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheEvict.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CachePut.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheTagLib$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheTagLib$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CacheTagLib.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/Cacheable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/ConfigBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/ConfigLoader$_sortConfigs_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/ConfigLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CustomCacheKeyGenerator$CacheKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/CustomCacheKeyGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsAnnotationCacheOperationSource$DefaultCacheKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsAnnotationCacheOperationSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsCacheAdminService$_clearAllCaches_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsCacheAdminService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsCacheManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsConcurrentMapCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsConcurrentMapCacheManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/GrailsValueWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/SerializableByteArrayOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/SerializableOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/SimpleKeyGenerator$SimpleKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/SimpleKeyGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/Timer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/compiler/CacheTransformation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/util/ClassUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/AlreadyGzippedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/ContentCacheParameters.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/GenericResponseWrapper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/GenericResponseWrapper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/GenericResponseWrapper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/GenericResponseWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/Header$Type.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/Header.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/HttpDateFormatter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/PageInfo$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/PageInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/SerializableCookie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/AbstractFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/CacheExpressionRootObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/CacheOperationContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/DefaultWebKeyGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/ExpressionEvaluator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/LazyParamAwareEvaluationContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/NoOpFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/PageFragmentCachingFilter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/PageFragmentCachingFilter$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/PageFragmentCachingFilter$CacheStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/PageFragmentCachingFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/WebKeyGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/simple/MemoryBlockingCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/simple/MemoryCacheConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/cache/web/filter/simple/MemoryPageFragmentCachingFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ChangelogXml2Groovy$_appendAttrs_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ChangelogXml2Groovy$_appendWithIndent_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ChangelogXml2Groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DbdocController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DbdocController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$_expandExpressions_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$_extractZipFile_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$_handleIncludedChangeLog_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$_processIncludeAll_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$_processProperty_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$_processRollback_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder$_setPropertiesFromAttributes_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/DslBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormColumn$_isIdentityColumn_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormColumn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_createIdentifierGenerator_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_createSnapshot_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_createSnapshot_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_filterSnapshot_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_filterSnapshot_closure3_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_filterSnapshot_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_filterSnapshot_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_filterSnapshot_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator$_filterSnapshot_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GormDiff.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsChange$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsChange.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsChangeLogParser$_setChangelogProperties_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsChangeLogParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsDiffStatusListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsPrecondition$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GrailsPrecondition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/HibernateAwareTypeConverter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationRunner$_autoRun_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationRunner$_autoRun_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationRunner$_runMigrations_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_getDataSourceConfigs_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_getDatabase_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_getDatabases_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure18_closure20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils$_removeIgnoredObjects_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MigrationUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer$_hasForeignKeyConstraintChange_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/NoopVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ScriptUtils$_appendToChangelog_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ScriptUtils$_appendToChangelog_closure2_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ScriptUtils$_appendToChangelog_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ScriptUtils$_executeAndWrite_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ScriptUtils$_generatePreviousChangesetSql_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/ScriptUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/Slf4jLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/TableListWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/TableWriter$_writeCustomHTML_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/databasemigration/dbdoc/TableWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/grails/plugin/webxml/FilterManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig$_init_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig$_init_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator$GrailsControllerType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/DomainClassPropertyComparator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/GrailsTemplateGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/SimpleDomainClassPropertyComparator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/view/ScaffoldedGroovyPageView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/codehaus/groovy/grails/scaffolding/view/ScaffoldingViewResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_buildAggregateResource_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_buildAggregateResource_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_containsResource_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_isDirty_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/CSSBundleResourceMeta.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/CSSLinkProcessor$_process_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/CSSLinkProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/DevModeSanityFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/JavaScriptBundleResourceMeta.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ProcessingFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/RequestUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceMeta$_reset_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceMeta.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceModule$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceModule$_getRequiredDispositions_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceModule$_newResourceFromArgs_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceModule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_addModuleDispositionsToRequest_closure23.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_afterPropertiesSet_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_afterPropertiesSet_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_canProcessLegacyResource_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_canProcessLegacyResource_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_defineModuleFromBuilder_closure17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure21_closure36.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure21_closure37.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure22.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_findSyntheticResourceById_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getConfigParamOrDefault_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getResourceMetaForURI_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getResourceMetaForURI_closure11_closure28.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getServletContext_closure24.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure18_closure31.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure19_closure32.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure19_closure33.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure19_closure33_closure34.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure19_closure33_closure35.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_makeFileSystemPathFromURI_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure15_closure29.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure15_closure30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareSingleDeclaredResource_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure6_closure25.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure7_closure26.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure7_closure26_closure27.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceProcessorBatch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$__clinit__closure15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$__clinit__closure16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$__clinit__closure17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$__clinit__closure18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure12_closure21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure1_closure19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure5_closure20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_resolveLinkUriToUriAndResource_closure14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_writeAttrs_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/ResourceTagLib.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/URLUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/MapperPhase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getDefaultExcludes_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getDefaultIncludes_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getExcludes_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getExcludingPattern_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getIncludes_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getIncludingPattern_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getName_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getOperation_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getPhase_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getPriority_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/module/ModuleBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory$_getModuleDeclarations_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory$_getModuleDeclarations_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory$_getModuleDeclarations_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/module/ModulesBuilder$_invokeMethod_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/module/ModulesBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/util/DispositionsUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/util/HalfBakedLegacyLinkGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/util/ResourceMetaStore$_addResource_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/util/ResourceMetaStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/util/StatsManager$_dumpStats_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/util/StatsManager$_dumpStats_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resource/util/StatsManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resources/artefacts/AbstractResourcesArtefactHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resources/artefacts/DefaultResourceMapperClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resources/artefacts/DefaultResourcesClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resources/artefacts/ResourceMapperArtefactHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resources/artefacts/ResourceMapperClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resources/artefacts/ResourcesArtefactHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugin/resources/artefacts/ResourcesClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/InlineExplodedTomcatServer$_preStart_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/InlineExplodedTomcatServer$_preStart_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/InlineExplodedTomcatServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/ParentDelegatingClassLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/TomcatKillSwitch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/TomcatLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/TomcatServer$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/TomcatServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/TomcatServerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/ForkedTomcatServer$_findSystemClasspathJars_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/ForkedTomcatServer$_findSystemClasspathJars_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/ForkedTomcatServer$_startSecure_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/ForkedTomcatServer$_startSecure_closure1_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/ForkedTomcatServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/TomcatDevelopmentRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/TomcatExecutionContext$_buildMinimalIsolatedClasspath_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/TomcatExecutionContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/LolStat-grailsPlugins/org/grails/plugins/tomcat/fork/TomcatWarRunner.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/ConnectionPoolingHttpBuilder.groovy" afterPath="$PROJECT_DIR$/src/groovy/ConnectionPoolingHttpBuilder.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LolStat-grailsPlugins.iml" afterPath="$PROJECT_DIR$/LolStat-grailsPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LolStat.iml" afterPath="$PROJECT_DIR$/LolStat.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LolStat.ipr" afterPath="$PROJECT_DIR$/LolStat.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LolStat.iws" afterPath="$PROJECT_DIR$/LolStat.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/lolstat/StatService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/lolstat/StatService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
     </list>
@@ -32,11 +364,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1200">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.41099855" vertical-offset="466" max-vertical-offset="1230">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,11 +394,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SummonerService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/lolstat/SummonerService.groovy">
+      <file leaf-file-name="ConnectionPoolingHttpBuilder.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/ConnectionPoolingHttpBuilder.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradlew" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradlew.bat" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1440">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_SummonerStat.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/_SummonerStat.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/error.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resources.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -65,30 +459,8 @@
       <file leaf-file-name="StatService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/lolstat/StatService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionPoolingHttpBuilder.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/ConnectionPoolingHttpBuilder.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resources.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29605263" vertical-offset="0" max-vertical-offset="456">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,6 +480,7 @@
     <option name="tasksExpandState">
       <map>
         <entry key="" value="true" />
+        <entry key="LolStat/" value="true" />
       </map>
     </option>
     <option name="availableProjects">
@@ -347,18 +720,20 @@
       <list>
         <option value="$PROJECT_DIR$/grails-app/views/SummonerStat.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/lolstat/Summoner.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/lolstat/SummonerController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/lolstat/SummonerService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/ConnectionPoolingHttpBuilder.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/lolstat/StatService.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="7" />
+    <option name="y" value="94" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
@@ -401,12 +776,12 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="re&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/conf/spring/resources.groovy&#10;contr&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/controllers/lolstat/SummonerController.groovy&#10;con&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/conf/BuildConfig.groovy" />
+    <property name="SearchEverywhereHistoryKey" value="buildco&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/conf/BuildConfig.groovy&#10;build&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/conf/BuildConfig.groovy&#10;re&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/conf/spring/resources.groovy&#10;contr&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/controllers/lolstat/SummonerController.groovy&#10;con&#9;FILE&#9;file:///Users/zzhao/Private/workspace/LolStat/grails-app/conf/BuildConfig.groovy" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -414,7 +789,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Grails.Grails:LolStat">
+  <component name="RunManager" selected="Groovy.BuildConfig">
     <configuration default="false" name="BuildConfig" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="LolStat" />
       <setting name="path" value="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
@@ -828,11 +1203,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Groovy.gradle:wrapper" />
-        <item index="1" class="java.lang.String" itemvalue="Groovy.build (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Groovy.build (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Groovy.build" />
-        <item index="4" class="java.lang.String" itemvalue="Groovy.BuildConfig" />
+        <item index="0" class="java.lang.String" itemvalue="Groovy.BuildConfig" />
+        <item index="1" class="java.lang.String" itemvalue="Groovy.gradle:wrapper" />
+        <item index="2" class="java.lang.String" itemvalue="Groovy.build (2)" />
+        <item index="3" class="java.lang.String" itemvalue="Groovy.build (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Groovy.build" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -853,18 +1228,18 @@
       <workItem from="1444866188385" duration="729000" />
       <workItem from="1444867818089" duration="60000" />
       <workItem from="1444867998898" duration="1032000" />
-      <workItem from="1444869635468" duration="369000" />
+      <workItem from="1444869635468" duration="3492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12817000" />
+    <option name="totallyTimeSpent" value="15940000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <frame x="7" y="94" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -872,6 +1247,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4794702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -879,23 +1255,22 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1602289" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26357615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3589404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2453505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4794702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -997,7 +1372,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="210">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1055,7 +1430,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="210">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1117,7 +1492,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1151,13 +1526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/_SummonerStat.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="727">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gvm/grails/2.3.11/lib/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.5-sources.jar!/org/apache/http/client/methods/HttpPost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61647725" vertical-offset="76" max-vertical-offset="885">
@@ -1176,14 +1544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14914773" vertical-offset="0" max-vertical-offset="704">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,22 +1572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/lolstat/SummonerController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5652175" vertical-offset="0" max-vertical-offset="240">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/lolstat/StatService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/lolstat/SummonerService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
@@ -1236,28 +1580,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1200">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/lolstat/SummonerController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5652175" vertical-offset="0" max-vertical-offset="240">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/_SummonerStat.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/work/plugins/tomcat-7.0.54/src/java/org/grails/plugins/tomcat/TomcatKillSwitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/ConnectionPoolingHttpBuilder.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/error.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29605263" vertical-offset="0" max-vertical-offset="456">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/lolstat/StatService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41099855" vertical-offset="466" max-vertical-offset="1230">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1269,7 +1685,7 @@
         <entry key="LolStat">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="-1042279516" />
+              <option name="buildConfigCrc" value="1178647613" />
               <option name="pluginDependenciesCrc" value="-1400487741" />
               <option name="properties">
                 <map>
@@ -1318,7 +1734,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Python 2.7.6 (/usr/bin/python) interpreter library</last-edited>
+          <last-edited>grails-2.3.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1342,7 +1758,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|LolStat</last-edited>
+          <last-edited>GrailsWeb|LolStat</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

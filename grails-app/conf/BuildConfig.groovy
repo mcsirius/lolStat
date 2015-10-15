@@ -40,6 +40,8 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.27'
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
         compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
+        compile 'org.apache.commons:commons-math3:3.4.1'
+
         test "org.grails:grails-datastore-test-support:1.0-grails-2.3"
     }
 

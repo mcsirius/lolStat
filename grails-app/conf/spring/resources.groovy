@@ -2,8 +2,8 @@
 beans = {
 //
 //    lolHttpClient(ConnectionPoolingHttpBuilder) { bean ->
-//        bean.constructorArgs = [
-//                                        defaultURI : "https://na.api.pvp.net/api/lol/"
-//                                ]
+//        bean.constructorArgs = [defaultURI : "https://na.api.pvp.net/api/lol/"]
 //    }
+
+
 }
