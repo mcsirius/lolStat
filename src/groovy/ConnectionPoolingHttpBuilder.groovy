@@ -8,12 +8,17 @@ import org.apache.http.params.HttpParams
  * Created by zzhao on 10/14/15.
  */
 class ConnectionPoolingHttpBuilder extends HTTPBuilder{
+    ConnectionPoolingHttpBuilder(){
+
+    }
+
     ConnectionPoolingHttpBuilder(String defaultURI) {
         super(defaultURI)
     }
 
     ConnectionPoolingHttpBuilder(Map arguments) {
         super(arguments.defaultURI)
+        this.auth.basic(arguments.authUser, arguments.authPassword)
     }
 
     @Override
