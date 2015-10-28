@@ -21,6 +21,6 @@ class SummonerController {
 
         CurrentGame game = summonerService.getCurrentGameInfo(formattedName)
 
-        render(view:currentGameInfo, model:[participants:game.participants])
+        render(view:"CurrentGameInfo", model:[participants:game.participants])
     }
 }

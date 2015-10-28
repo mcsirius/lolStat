@@ -11,7 +11,6 @@
     <label>Summoner Name: </label>
     <g:textField id="currentSummonerName" name="currentSummonerName"/>
     <g:actionSubmit value="submit" class="btn btn-large" action="getCurrentGameInfo"/>
-
 </g:form>
 
 </html>

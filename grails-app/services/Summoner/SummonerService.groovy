@@ -28,15 +28,18 @@ class SummonerService {
         summoner
     }
 
-    Summoner getSummonerById(Long id) {
-        Summoner summoner = new Summoner(id: id)
+    List<CurrentGameSummoner> getSummonerById(List<CurrentGameSummoner> summoners) {
+
+        String ids = summoners*.id.join(",")
 
         lolHttpClient.request(Method.GET, ContentType.JSON) {
-            uri.path = "api/lol/na/v1.4/summoner/" + id
+            uri.path = "api/lol/na/v1.4/summoner/" + ids
             uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
 
-            response.success = { resp, summonerInfo ->
-                summoner.name = summonerInfo.get(id.toString()).name
+            response.success = { resp, summonersInfo ->
+                summoners.each { summoner ->
+                    summoner.name = summonersInfo.get(summoner.id.toString()).name
+                }
             }
 
             response.failure = { resp, exceptions ->
@@ -44,7 +47,7 @@ class SummonerService {
             }
         }
 
-        summoner
+        summoners
     }
 
     def mapToSummoner(Summoner summoner, Map summonerInfo) {
@@ -58,7 +61,7 @@ class SummonerService {
         exceptions.message
     }
 
-    def getCurrentGameInfo(String summonerName) {
+    CurrentGame getCurrentGameInfo(String summonerName) {
 
         Long summonerId = getSummonerByName(summonerName).id
         CurrentGame game = new CurrentGame()
@@ -69,18 +72,14 @@ class SummonerService {
 
             response.success = { resp, currentGameInfo ->
                 game.gameId = currentGameInfo.gameId
-                mapToCurrentGame(game, currentGameInfo)
+                game = mapToCurrentGame(game, currentGameInfo)
             }
 
             response.failure = { resp, exceptions ->
                 errorHandler(exceptions)
             }
         }
-
-        fillDetails(game)
-
         game
-
     }
 
     def mapToCurrentGame(CurrentGame game, def currentGameInfo) {
@@ -92,24 +91,20 @@ class SummonerService {
             participant ->
                 String spell1 = SummonerSpells.SPELLS.get(participant.spell1Id)
                 String spell2 = SummonerSpells.SPELLS.get(participant.spell12d)
-                //cacheable
-                String name = getSummonerById(participant.summonerId).name
-                //enum this or cache it
                 String champion = getChampionById(participant.championId)
 
-                Thread.sleep(2000)
-                Map tierAndDivision = getSummonerTierAndDivision(participant.summonerId, name)
-                CurrentGameSummoner summoner = new CurrentGameSummoner(id: participant.summonerId,
-                                                                       name: name,
-                                                                       spell1: spell1,
+                CurrentGameSummoner summoner = new CurrentGameSummoner(spell1: spell1,
                                                                        spell2:spell2,
-                                                                       champion: champion,
-                                                                       tier: tierAndDivision.get("tier"),
-                                                                       division: tierAndDivision.get("division"))
-
+                                                                       champion: champion)
+                summoner.id = participant.summonerId
                 formattedList.add(summoner)
         }
+
+        getSummonerById(formattedList)
+        getTiersAndDivisions(formattedList)
+
         game.participants = formattedList
+        game
     }
 
     def fillDetails(CurrentGame game) {
@@ -151,22 +146,22 @@ class SummonerService {
         }
     }
 
-    Map getSummonerTierAndDivision(Long id, String summonerName) {
-        def tierAndDivision = [:]
+    def getTiersAndDivisions(List<CurrentGameSummoner> summoners) {
+
+        String ids = summoners*.id.join(",")
+
         lolHttpClient.request(Method.GET, ContentType.JSON) {
-            uri.path = "api/lol/na/v2.5/league/by-summoner/"+ id +"/entry"
+            uri.path = "api/lol/na/v2.5/league/by-summoner/"+ ids +"/entry"
             uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
 
             response.success = { resp, leagueInfo ->
-                leagueInfo.get(id.toString()).each{
-                    if(it.entries.get(0).playerOrTeamName.equals(summonerName.trim()
-                            .replaceAll("\\s","").toLowerCase())) {
-                        String tier = it.tier
-                        String division = it.entries.division
-                        tierAndDivision.put("tier", tier)
-                        tierAndDivision.put("division", division)
+                summoners.each { summoner ->
+                leagueInfo.get(summoner.id.toString()).each {
+                        if (it.queue.equals("RANKED_SOLO_5x5")) {
+                            summoner.division = it.entries.get(0).division
+                            summoner.tier = it.tier
+                        }
                     }
-
                 }
             }
 
@@ -174,9 +169,5 @@ class SummonerService {
                 errorHandler(exceptions)
             }
         }
-
-        tierAndDivision
     }
-
-
 }
