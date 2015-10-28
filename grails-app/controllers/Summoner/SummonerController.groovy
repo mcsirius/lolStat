@@ -4,9 +4,23 @@ class SummonerController {
 
     def summonerService
 
-    def getSummonerInfo(String name) {
-        Summoner summoner = summonerService.getSummonerInfoRequest(name)
+    def getSummonerInfo() {
+        String name = params.summonerName
+
+        String formattedName = name.trim().replaceAll("\\s","").toLowerCase()
+
+        Summoner summoner = summonerService.getSummonerByName(formattedName)
 
         render(view: "SummonerStat", model: [summoner:summoner])
+    }
+
+    def getCurrentGameInfo() {
+        String name = params.currentSummonerName
+
+        String formattedName = name.trim().replaceAll("\\s","").toLowerCase()
+
+        CurrentGame game = summonerService.getCurrentGameInfo(formattedName)
+
+        render(view:currentGameInfo, model:[participants:game.participants])
     }
 }
