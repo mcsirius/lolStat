@@ -105,6 +105,7 @@ class SummonerService {
 
         game.participants = formattedList
         game
+        print("wtf")
     }
 
     def fillDetails(CurrentGame game) {

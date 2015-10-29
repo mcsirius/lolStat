@@ -4,3 +4,7 @@ target/
 *.iws
 *.log
 build/
+*.iml
+*.lock
+*.bin
+.gradle/
