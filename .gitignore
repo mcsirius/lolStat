@@ -4,3 +4,7 @@ target/
 *.iws
 *.log
 build/
+.idea/
+*.iml
+*.slcache/
+.gradle/
