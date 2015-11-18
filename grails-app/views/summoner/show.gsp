@@ -19,8 +19,8 @@ Summoner RevisionDate: ${summoner.revisionDate}<br/>
 
 <g:if test="${game!=null}">
     <g:each in="${game.participants}" var="participant">
-        Champion: ${participant.champion}<br/>
-        Player Name:${participant.name}
+        <g:img dir="images/champions" file="${participant.champion + ".png"}" width="40" height="40"/>
+        ${participant.name}<br/>
         ${participant.tier}  ${participant.division}<br/>
     </g:each>
 </g:if>

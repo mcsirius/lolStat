@@ -6,7 +6,7 @@ class Summoner {
     long id
     String name
     int summonerLevel
-    long revisionDate
+    Date revisionDate
     String profileImage
 
     static constraints = {

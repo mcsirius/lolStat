@@ -17,7 +17,10 @@ class SummonerService {
             uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
 
             response.success = { resp, summonerInfo ->
-                mapToSummoner(summoner, summonerInfo)
+                summonerInfo.each {
+                    mapToSummoner(summoner, it)
+                }
+
             }
 
             response.failure = { resp, exceptions ->
@@ -28,51 +31,51 @@ class SummonerService {
         summoner
     }
 
-    List<CurrentGameSummoner> getSummonerById(List<CurrentGameSummoner> summoners) {
+    List<Summoner> getSummonerById(List<Long> ids) {
 
-        String ids = summoners*.id.join(",")
+        String idString = ids.join(",")
 
+        List <Summoner> summoners = []
         lolHttpClient.request(Method.GET, ContentType.JSON) {
-            uri.path = "api/lol/na/v1.4/summoner/" + ids
+            uri.path = "api/lol/na/v1.4/summoner/" + idString
             uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
 
             response.success = { resp, summonersInfo ->
-                summoners.each { summoner ->
-                    summoner.name = summonersInfo.get(summoner.id.toString()).name
+                summonersInfo.each {
+                    Summoner curr = new Summoner()
+                    mapToSummoner(curr, it)
+                    summoners.add(curr)
                 }
             }
-
             response.failure = { resp, exceptions ->
                 errorHandler(exceptions)
             }
         }
-
         summoners
     }
 
-    def mapToSummoner(Summoner summoner, Map summonerInfo) {
-        summoner.id = summonerInfo.get(summoner.name).id
-        summoner.profileImage = summonerInfo.get(summoner.name).profileIconId + ".png"
-        summoner.revisionDate = summonerInfo.get(summoner.name).revisionDate
-        summoner.summonerLevel = summonerInfo.get(summoner.name).summonerLevel
+    def mapToSummoner(Summoner summoner, Map.Entry entry) {
+        summoner.id = entry.value.id
+        summoner.profileImage = entry.value.profileIconId + ".png"
+        summoner.revisionDate = new Date(entry.value.revisionDate)
+        summoner.summonerLevel = entry.value.summonerLevel
+        summoner.name = entry.value.name
     }
 
     def errorHandler(def exceptions){
         exceptions.message
     }
 
-    CurrentGame getCurrentGameInfo(long id) {
+    CurrentGame getCurrentGameInfo(long summonerId) {
         CurrentGame game = new CurrentGame()
 
         lolHttpClient.request(Method.GET, ContentType.JSON) {
-            uri.path = "observer-mode/rest/consumer/getSpectatorGameInfo/NA1/" + id
+            uri.path = "observer-mode/rest/consumer/getSpectatorGameInfo/NA1/" + summonerId
             uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
 
             response.success = { resp, currentGameInfo ->
-//
-//                game.gameId = currentGameInfo.gameId
-//                game = mapToCurrentGame(game, currentGameInfo)
-                game.message = currentGameInfo
+                game.gameId = currentGameInfo.gameId
+                game = mapToCurrentGame(game, currentGameInfo)
             }
 
             response.failure = { resp, exceptions ->
@@ -85,7 +88,7 @@ class SummonerService {
     def mapToCurrentGame(CurrentGame game, def currentGameInfo) {
         List participants = currentGameInfo.participants
 
-        List <CurrentGameSummoner> formattedList = new ArrayList<>()
+        Map <Long, CurrentGameSummoner> formattedList = new HashMap<>()
 
         participants.each{
             participant ->
@@ -97,13 +100,19 @@ class SummonerService {
                                                                        spell2:spell2,
                                                                        champion: champion)
                 summoner.id = participant.summonerId
-                formattedList.add(summoner)
+                formattedList.put(summoner.id, summoner)
         }
 
-        getSummonerById(formattedList)
-        getTiersAndDivisions(formattedList)
+        List <Summoner> players = getSummonerById(formattedList*.getValue()*.id)
 
-        game.participants = formattedList
+        players.each {
+            formattedList.get(it.id).name = it.name
+            formattedList.put(it.id, formattedList.get(it.id))
+        }
+
+        getTiersAndDivisions(formattedList*.getValue())
+
+        game.participants = formattedList*.getValue()
         game
     }
 

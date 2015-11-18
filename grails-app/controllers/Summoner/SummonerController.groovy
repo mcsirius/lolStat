@@ -6,7 +6,7 @@ class SummonerController {
 
     def summonerService
 
-    def getSummonerInfo() {
+    def show() {
         String name = params.summonerName
         CurrentGame game
         Summoner summoner
@@ -21,16 +21,12 @@ class SummonerController {
             game = null
         }
 
-        render(view: "SummonerStat", model: [summoner:summoner, game:game])
-    }
 
-    def getCurrentGameInfo() {
-        String name = params.currentSummonerName
+        if (game != null) {
+            List <Long> participantIds = game.participants*.id
+            List <Summoner> participants = summonerService.getSummonerById(participantIds)
+        }
 
-        String formattedName = name.trim().replaceAll("\\s","").toLowerCase()
-
-        CurrentGame game = summonerService.getCurrentGameInfo(formattedName)
-
-        render(view:"CurrentGameInfo", model:[participants:game.participants])
+        [summoner:summoner, game:game]
     }
 }

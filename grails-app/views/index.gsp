@@ -13,7 +13,7 @@
         <g:form name="summonerBasicInfo" controller="summoner">
             <g:select class="region" name="region" id="region" from="${Regions}"/>
             <g:textField id="summonerName" name="summonerName"/>
-            <g:actionSubmit value="submit" class="btn btn-primary" action="getSummonerInfo"/>
+            <g:actionSubmit value="submit" class="btn btn-primary" action="show"/>
         </g:form>
     </div>
 <r:layoutResources />
