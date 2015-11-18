@@ -94,7 +94,7 @@ class SummonerService {
             participant ->
                 String spell1 = SummonerSpells.SPELLS.get(participant.spell1Id)
                 String spell2 = SummonerSpells.SPELLS.get(participant.spell12d)
-                String champion = getChampionById(participant.championId)
+                String champion = getChampionById(participant.championId).trim().replaceAll("\\s","").replaceAll("\\.","")
 
                 CurrentGameSummoner summoner = new CurrentGameSummoner(spell1: spell1,
                                                                        spell2:spell2,
