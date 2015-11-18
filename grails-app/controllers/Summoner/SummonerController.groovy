@@ -9,7 +9,7 @@ class SummonerController {
 
         String formattedName = name.trim().replaceAll("\\s","").toLowerCase()
 
-        Summoner summoner = summonerService.getSummonerByName(formattedName)
+        Summoner summoner = summonerService.getSummonerByName(formattedName, params.region)
 
         render(view: "SummonerStat", model: [summoner:summoner])
     }

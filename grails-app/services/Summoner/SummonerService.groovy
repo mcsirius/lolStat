@@ -8,12 +8,12 @@ class SummonerService {
 
     def lolHttpClient
 
-    Summoner getSummonerByName(String name) {
+    Summoner getSummonerByName(String name, String region) {
 
         Summoner summoner = new Summoner(name: name)
 
         lolHttpClient.request(Method.GET, ContentType.JSON) {
-            uri.path = "api/lol/na/v1.4/summoner/by-name/" + name
+            uri.path = "api/lol/"+ region +"/v1.4/summoner/by-name/" + name
             uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
 
             response.success = { resp, summonerInfo ->
