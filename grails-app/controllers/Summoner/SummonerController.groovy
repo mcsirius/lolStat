@@ -1,17 +1,27 @@
 package Summoner
 
+import org.apache.jasper.tagplugins.jstl.core.Catch
+
 class SummonerController {
 
     def summonerService
 
     def getSummonerInfo() {
         String name = params.summonerName
+        CurrentGame game
+        Summoner summoner
 
         String formattedName = name.trim().replaceAll("\\s","").toLowerCase()
 
-        Summoner summoner = summonerService.getSummonerByName(formattedName, params.region)
+        summoner = summonerService.getSummonerByName(formattedName, params.region)
 
-        render(view: "SummonerStat", model: [summoner:summoner])
+        try {
+            game = summonerService.getCurrentGameInfo(summoner.id)
+        } catch (Exception e) {
+            game = null
+        }
+
+        render(view: "SummonerStat", model: [summoner:summoner, game:game])
     }
 
     def getCurrentGameInfo() {

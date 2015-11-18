@@ -1,11 +1,13 @@
 package Summoner
 
+import com.lowagie.text.Image
+
 class Summoner {
     long id
     String name
-    long profileIconId
     int summonerLevel
     long revisionDate
+    String profileImage
 
     static constraints = {
     }

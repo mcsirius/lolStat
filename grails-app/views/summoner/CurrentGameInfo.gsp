@@ -16,7 +16,6 @@
     Champion: ${participant.champion}<br/>
     Player Name:${participant.name}
     ${participant.tier}  ${participant.division}<br/>
-
 </g:each>
 </body>
 </html>

@@ -52,7 +52,7 @@ class SummonerService {
 
     def mapToSummoner(Summoner summoner, Map summonerInfo) {
         summoner.id = summonerInfo.get(summoner.name).id
-        summoner.profileIconId = summonerInfo.get(summoner.name).profileIconId
+        summoner.profileImage = summonerInfo.get(summoner.name).profileIconId + ".png"
         summoner.revisionDate = summonerInfo.get(summoner.name).revisionDate
         summoner.summonerLevel = summonerInfo.get(summoner.name).summonerLevel
     }
@@ -61,22 +61,22 @@ class SummonerService {
         exceptions.message
     }
 
-    CurrentGame getCurrentGameInfo(String summonerName) {
-
-        Long summonerId = getSummonerByName(summonerName).id
+    CurrentGame getCurrentGameInfo(long id) {
         CurrentGame game = new CurrentGame()
 
         lolHttpClient.request(Method.GET, ContentType.JSON) {
-            uri.path = "observer-mode/rest/consumer/getSpectatorGameInfo/NA1/" + summonerId
+            uri.path = "observer-mode/rest/consumer/getSpectatorGameInfo/NA1/" + id
             uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
 
             response.success = { resp, currentGameInfo ->
-                game.gameId = currentGameInfo.gameId
-                game = mapToCurrentGame(game, currentGameInfo)
+//
+//                game.gameId = currentGameInfo.gameId
+//                game = mapToCurrentGame(game, currentGameInfo)
+                game.message = currentGameInfo
             }
 
             response.failure = { resp, exceptions ->
-                errorHandler(exceptions)
+                game.errors = exceptions.message
             }
         }
         game

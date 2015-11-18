@@ -10,11 +10,11 @@
 </head>
 <body>
     <div class="searchBar">
-    <g:form name="summonerBasicInfo" controller="summoner">
-        <g:select class="region" name="region" id="region" from="${Regions}"/>
-        <g:textField id="summonerName" name="summonerName"/>
-        <g:actionSubmit value="submit" class="btn btn-primary" action="getSummonerInfo"/>
-    </g:form>
+        <g:form name="summonerBasicInfo" controller="summoner">
+            <g:select class="region" name="region" id="region" from="${Regions}"/>
+            <g:textField id="summonerName" name="summonerName"/>
+            <g:actionSubmit value="submit" class="btn btn-primary" action="getSummonerInfo"/>
+        </g:form>
     </div>
 <r:layoutResources />
 </body>

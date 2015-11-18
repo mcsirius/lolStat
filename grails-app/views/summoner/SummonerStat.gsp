@@ -12,9 +12,18 @@
 </head>
 
 <body>
-Summoner Name: ${summoner.name}<br/>
+<g:img dir="images/profileIcons" file="${summoner.profileImage}" width="40" height="40"/>
+${summoner.name}<br/>
 Summoner Level: ${summoner.summonerLevel}<br/>
-Summoner ProfileIcon: ${summoner.profileIconId}<br/>
 Summoner RevisionDate: ${summoner.revisionDate}<br/>
+
+<g:if test="${game!=null}">
+    <g:each in="${game.participants}" var="participant">
+        Champion: ${participant.champion}<br/>
+        Player Name:${participant.name}
+        ${participant.tier}  ${participant.division}<br/>
+    </g:each>
+</g:if>
+
 </body>
 </html>
