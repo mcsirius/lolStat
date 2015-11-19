@@ -10,6 +10,7 @@ class CurrentGameSummoner {
     String spell2
     String tier
     String division
+    Long teamId
 
     static constraints = {
     }

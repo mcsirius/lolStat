@@ -31,7 +31,7 @@ class SummonerService {
         summoner
     }
 
-    List<Summoner> getSummonerById(List<Long> ids) {
+    List<Summoner> getSummonersByIds(List<Long> ids) {
 
         String idString = ids.join(",")
 
@@ -94,16 +94,17 @@ class SummonerService {
             participant ->
                 String spell1 = SummonerSpells.SPELLS.get(participant.spell1Id)
                 String spell2 = SummonerSpells.SPELLS.get(participant.spell12d)
-                String champion = getChampionById(participant.championId).trim().replaceAll("\\s","").replaceAll("\\.","")
+                String champion = getChampionById(participant.championId)
 
                 CurrentGameSummoner summoner = new CurrentGameSummoner(spell1: spell1,
                                                                        spell2:spell2,
-                                                                       champion: champion)
+                                                                       champion: champion,
+                                                                       teamId: participant.teamId)
                 summoner.id = participant.summonerId
                 formattedList.put(summoner.id, summoner)
         }
 
-        List <Summoner> players = getSummonerById(formattedList*.getValue()*.id)
+        List <Summoner> players = getSummonersByIds(formattedList*.getValue()*.id)
 
         players.each {
             formattedList.get(it.id).name = it.name
@@ -112,12 +113,19 @@ class SummonerService {
 
         getTiersAndDivisions(formattedList*.getValue())
 
-        game.participants = formattedList*.getValue()
+        List <CurrentGameSummoner> blueTeam = []
+        List <CurrentGameSummoner> redTeam = []
+        formattedList*.getValue().each {
+            if (it.teamId == 100L) {
+                blueTeam.add(it)
+            } else {
+                redTeam.add(it)
+            }
+        }
+        game.blueTeam = blueTeam
+        game.redTeam = redTeam
+
         game
-    }
-
-    def fillDetails(CurrentGame game) {
-
     }
 
 //    String getSpellName(int id) {
@@ -153,6 +161,8 @@ class SummonerService {
                 errorHandler(exceptions)
             }
         }
+
+        champion.trim().replaceAll("\\s","").replaceAll("\\.","").replaceAll("'","")
     }
 
     def getTiersAndDivisions(List<CurrentGameSummoner> summoners) {
