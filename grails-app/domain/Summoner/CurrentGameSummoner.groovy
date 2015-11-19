@@ -6,8 +6,8 @@ class CurrentGameSummoner {
     String name
     String champion
     List runes
-    String spell1
-    String spell2
+    SummonerSpell spell1
+    SummonerSpell spell2
     String tier
     String division
     Long teamId

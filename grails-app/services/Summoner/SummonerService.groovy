@@ -96,8 +96,8 @@ class SummonerService {
                 String spell2 = SummonerSpells.SPELLS.get(participant.spell12d)
                 String champion = getChampionById(participant.championId)
 
-                CurrentGameSummoner summoner = new CurrentGameSummoner(spell1: spell1,
-                                                                       spell2:spell2,
+                CurrentGameSummoner summoner = new CurrentGameSummoner(spell1: getSpell(participant.spell1Id),
+                                                                       spell2: getSpell(participant.spell2Id),
                                                                        champion: champion,
                                                                        teamId: participant.teamId)
                 summoner.id = participant.summonerId
@@ -128,23 +128,26 @@ class SummonerService {
         game
     }
 
-//    String getSpellName(int id) {
-//        String spell=""
-//        lolHttpClient.request(Method.GET, ContentType.JSON) {
-//            uri.path = "api/lol/static-data/na/v1.2/summoner-spell/" + id
-//            uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
-//
-//            response.success = { resp, spellInfo ->
-//                spell = spellInfo.name
-//            }
-//
-//            response.failure = { resp, exceptions ->
-//                errorHandler(exceptions)
-//            }
-//        }
-//
-//        spell
-//    }
+    SummonerSpell getSpell(int id) {
+        SummonerSpell spell = new  SummonerSpell()
+        lolHttpClient.request(Method.GET, ContentType.JSON) {
+            uri.path = "api/lol/static-data/na/v1.2/summoner-spell/" + id
+            uri.query = [api_key:"9ce4a1d5-8e7e-445b-8e6d-2e8774f07661"]
+
+            response.success = { resp, spellInfo ->
+                spell.key = spellInfo.key
+                spell.id = id
+                spell.description = spellInfo.description
+                spell.name = spellInfo.name
+            }
+
+            response.failure = { resp, exceptions ->
+                errorHandler(exceptions)
+            }
+        }
+
+        spell
+    }
 
     String getChampionById(Long id){
         String champion=""
