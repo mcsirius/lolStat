@@ -20,5 +20,4 @@ class SummonerSpells {
                     4:"Flash",
                     17:"Garrison"]
 
-
 }

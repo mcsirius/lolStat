@@ -1,0 +1,24 @@
+// Elastic Beanstalk configuration
+
+task dockerZip {
+    def eb = file("$buildDir/eb")
+    outputs.dir eb
+    doLast {
+        eb.mkdirs()
+        copy {
+            from 'eb'
+            into eb
+        }
+    }
+}
+
+installApp.dependsOn 'dockerZip'
+
+task ebArchive(type:Zip, dependsOn: installApp) {
+    appendix = 'eb'
+    from("$buildDir/install/${project.name}")
+}
+
+applicationDistribution.from(dockerZip) {
+    into ""
+}
