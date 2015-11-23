@@ -6,6 +6,5 @@ target/
 build/
 .idea/
 *.iml
-*.iml/
 *.slcache/
 .gradle/
