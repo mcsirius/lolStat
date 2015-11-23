@@ -8,5 +8,3 @@ build/
 *.iml
 *.slcache/
 .gradle/
-
-*.iml
